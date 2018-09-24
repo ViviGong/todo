@@ -14,3 +14,8 @@ function addListItem() {
 function deleteListItem(item) {
     item.parentNode.removeChild(item);
 }
+
+function completeListItem(item) {
+    if (item.checked) {item.parentNode.style.textDecoration = "line-through";}
+       else{item.parentNode.style.textDecoration = "none";}
+}
